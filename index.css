@@ -102,7 +102,7 @@ input{
 }
 
 
-@media screen and (max-width: 548) {
+@media (max-width: 548px) {
     .Input{
         margin-left: 4px ;
         margin-right: 4px ;
@@ -114,7 +114,7 @@ input{
         visibility: hidden;
     }
 }
-@media (min-width:549){
+@media (min-width:549px){
     .logoTitle{
         visibility: hidden;
     }
