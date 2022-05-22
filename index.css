@@ -9,6 +9,8 @@
     width: 100%;
     height: 100vh;
     background-image: url('assests/fog.png');
+    /* align-items: center; */
+    align-self: center;
 }
 .Input{
     display: flex;  
@@ -78,6 +80,14 @@ input{
     width: 100%;
     border: none;
 }
+.logoTitle{
+    text-align: center;
+    color: darkblue;
+    font-family: fantasy;
+    font-weight: 400;
+    font-size: 4rem;
+    visibility: visible;
+}
 .submitBtn:hover{
     background-color: rgb(59 130 246);
 }
@@ -92,10 +102,23 @@ input{
 }
 
 
-@media screen and (min-width: 548) {
+@media screen and (max-width: 548) {
     .Input{
         margin-left: 4px ;
         margin-right: 4px ;
-      
+    }
+    .logoTitle{
+        visibility: visible;
+    }
+    .logo{
+        visibility: hidden;
+    }
+}
+@media (min-width:549){
+    .logoTitle{
+        visibility: hidden;
+    }
+    .logo{
+        visibility: visible;
     }
 }
