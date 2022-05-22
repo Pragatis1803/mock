@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 #Main{
     display: flex;
     flex-direction: row;
@@ -6,9 +10,9 @@
     height: 100vh;
     background-image: url('assests/fog.png');
 }
-.input{
+.Input{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     background-color: rgba(22, 13, 13, 0.825);
     padding-left: 4rem;
