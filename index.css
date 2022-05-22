@@ -6,15 +6,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* width: 100%; */
-    /* height: 100vh; */
+    width: 100%;
+    height: 100vh;
     background-image: url('assests/fog.png');
 }
 .Input{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(22, 13, 13, 0.825);
+    background-color: rgba(22, 13, 13, 0.6);
     padding-left: 4rem;
     padding-right: 4rem;
     border-radius: 0.5rem;
@@ -31,7 +31,7 @@
     position: relative;
     left: -6rem;
     top: 3.5rem;
-    transform: 45deg;
+    transform: rotate(-45deg);
 
 }
 .logo{
@@ -78,6 +78,7 @@ button{
     padding-bottom: 0.5rem;
     display: block;
     width: 100%;
+    border: none;
 
 
 }
@@ -90,14 +91,15 @@ button:active{
 
 }
 .placeTemp{
-    columns: white;
+    color: white;
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 600;
-
+    
 }
 label{
     color: white;
+    display: inline-block;
 }
 #Humidity #Wind_speed{
     color: white;
