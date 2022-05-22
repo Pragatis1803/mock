@@ -10,23 +10,22 @@
 </head>
 <body>
     <div id="Main">
-        <div class="khidki"></div>
         <div class="Input">
-            <img src="./assests/umbrella-svgrepo-com.svg" alt="" srcset="" class="umbrella">
-            <img src="./assests/logo.png" alt="" srcset="" class="logo">
+            <img src="./assests/umbrella-svgrepo-com.svg" class="umbrella">
+            <!-- <img src="./assests/logo.png"class="logo"> -->
             <form action="index.html" method="post" class="form">
-                <input type="text" class="" placeholder="Search City Name">
-                <input type="text" class="" placeholder="Search Country Code">
-                <button type="submit" class="">Search</button>
+                <input type="text" class="cityName" placeholder="Search City Name">
+                <input type="text" class="countryCode" placeholder="Search Country Code">
+                <button type="submit" class="submitBtn">Search</button><br>
+                <button class="submitBtn" onclick="Change()">Change Backgound</button>
             </form>
-            <button class="" onclick="Change()">Change Backgound</button>
-            <p class="placeTemp" id="Place">Wheather in Place</p>
-            <p class="placeTemp" id="Place">22&#8451;</p>
+            <p class="placeTemp weatherTag">Wheather in Place</p>
+            <p class="placeTemp weatherValue" id="Place">22&#8451;</p>
             <div style="color: white;">
-                <label for="Humidity" style="display: inline-block;">Humidity :</label>
-                <p class="" id="Humidity" style="display: inline-block;">35%</p><br>
-                <label for="Wind_speed" class="" style="display: inline-block;">Wind Speed :</label>
-                <p class="" id="Wind_speed" style="display: inline-block;">4.63Km/h</p>
+                <label for="Humidity humudityTag" style="display: inline-block;">Humidity :</label>
+                <p id="Humidity" class="humidityValue" style="display: inline-block;">35%</p><br>
+                <label for="Wind_speed" class="windTag" style="display: inline-block;">Wind Speed :</label>
+                <p class="windValue" id="Wind_speed" style="display: inline-block;">4.63Km/h</p>
             </div>
         </div>
      
@@ -35,33 +34,34 @@
     <script>
 const Change=()=>{
 let main= document.getElementById('Main');
-if(main.classList.contains("bg-[url('./assests/fog.png')]")){
+if(main.classList.style.contains("bg-[url('./assests/fog.png')]")){
 main.classList.remove("bg-[url('./assests/fog.png')]")
 main.classList.add("bg-[url('./assests/partlycloudy.png')]")
-}else if(main.classList.contains("bg-[url('./assests/partlycloudy.png')]")){
-    main.classList.remove("bg-[url('./assests/partlycloudy.png')]")
-    main.classList.add("bg-[url('./assests/rainy.png')]")
-    
+
 }
-else if(main.classList.contains("bg-[url('./assests/rainy.png')]")){
-    main.classList.remove("bg-[url('./assests/rainy.png')]")
-    main.classList.add("bg-[url('./assests/storm.png')]")
+//else if(main.classList.contains("bg-[url('./assests/partlycloudy.png')]")){
+//     main.classList.remove("bg-[url('./assests/partlycloudy.png')]")
+//     main.classList.add("bg-[url('./assests/rainy.png')]")
+    
+// }
+// else if(main.classList.contains("bg-[url('./assests/rainy.png')]")){
+//     main.classList.remove("bg-[url('./assests/rainy.png')]")
+//     main.classList.add("bg-[url('./assests/storm.png')]")
     
 
-}else if(main.classList.contains("bg-[url('./assests/storm.png')]")){
-    main.classList.remove("bg-[url('./assests/storm.png')]")
-    main.classList.add("bg-[url('./assests/sunny.png')]")
+// }else if(main.classList.contains("bg-[url('./assests/storm.png')]")){
+//     main.classList.remove("bg-[url('./assests/storm.png')]")
+//     main.classList.add("bg-[url('./assests/sunny.png')]")
     
 
-}else if(main.classList.contains("bg-[url('./assests/sunny.png')]")){
-    main.classList.remove("bg-[url('./assests/sunny.png')]")
-    main.classList.add("bg-[url('./assests/windy.png')]")
-}else if(main.classList.contains("bg-[url('./assests/windy.png')]")){
-    main.classList.remove("bg-[url('./assests/windy.png')]")
-    main.classList.add("bg-[url('./assests/fog.png')]")
+// }else if(main.classList.contains("bg-[url('./assests/sunny.png')]")){
+//     main.classList.remove("bg-[url('./assests/sunny.png')]")
+//     main.classList.add("bg-[url('./assests/windy.png')]")
+// }else if(main.classList.contains("bg-[url('./assests/windy.png')]")){
+//     main.classList.remove("bg-[url('./assests/windy.png')]")
+//     main.classList.add("bg-[url('./assests/fog.png')]")
     
-}
-
+// }
 }
 // setInterval(Change, 2000);
 

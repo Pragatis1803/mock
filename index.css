@@ -11,18 +11,17 @@
     background-image: url('assests/fog.png');
 }
 .Input{
-    display: flex;
+    display: flex;  
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(22, 13, 13, 0.6);
+    background-color: rgba(22, 13, 13, 0.4);
     padding-left: 4rem;
     padding-right: 4rem;
     border-radius: 0.5rem;
     margin-top: auto;
     margin-bottom: auto;
     padding-bottom: 3rem;
-    box-shadow: 0,4px,4px,-4px , black;
-    
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
 }
 .umbrella{
     width: 8rem;
@@ -46,12 +45,11 @@
     margin-right: auto;
     margin-bottom: 3rem;
     margin-top: 0.5rem;
-
-
 }
 input{
     width: 100%;
-    color: rgb(229,231,235);
+    /* color: rgb(229,231,235); */
+    color: black !important;
     outline: 2px solid transparent;
     outline-offset: 2px;
     border-style: none;
@@ -66,7 +64,7 @@ input{
     color: rgb(255 247 237);
 
 }
-button{
+.submitBtn{
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(30 64 175);
@@ -79,29 +77,25 @@ button{
     display: block;
     width: 100%;
     border: none;
-
-
 }
-button:hover{
+.submitBtn:hover{
     background-color: rgb(59 130 246);
-
 }
-button:active{
+.submitBtn:active{
     background-color: rgb(30 64 175);
-
 }
 .placeTemp{
     color: white;
     font-size: 1.5rem;
     line-height: 2rem;
-    font-weight: 600;
-    
+    font-weight: 600;   
 }
-label{
-    color: white;
-    display: inline-block;
-}
-#Humidity #Wind_speed{
-    color: white;
-    display: inline-block;
+
+
+@media screen and (min-width: 548) {
+    .Input{
+        margin-left: 4px ;
+        margin-right: 4px ;
+      
+    }
 }
