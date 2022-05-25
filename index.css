@@ -2,13 +2,25 @@
     margin: 0;
     padding: 0;
 }
+html { 
+    background: url(assests/storm.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
 #Main{
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url('assests/fog.png');
+    /* background-image: url('assests/fog.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
     /* align-items: center; */
     align-self: center;
 }
@@ -45,7 +57,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     margin-top: 0.5rem;
 }
 input{
@@ -102,23 +114,25 @@ input{
 }
 
 
-@media (max-width: 548px) {
+@media (max-width: 499px) {
     .Input{
         margin-left: 4px ;
         margin-right: 4px ;
+        background-color: transparent;
+        box-shadow: none;
     }
     .logoTitle{
-        visibility: visible;
+        display: block;
     }
     .logo{
-        visibility: hidden;
+        display: none;
     }
 }
-@media (min-width:549px){
+@media (min-width:500px){
     .logoTitle{
-        visibility: hidden;
+        display: none;
     }
     .logo{
-        visibility: visible;
+        display: block;
     }
 }
