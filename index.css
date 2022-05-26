@@ -115,6 +115,14 @@ input{
     line-height: 2rem;
     font-weight: 600;   
 }
+.order{
+    display: flex;
+    flex-direction: row;
+}
+.description{
+    display: flex;
+    align-items: center;
+}
 
 
 @media (max-width: 499px) {

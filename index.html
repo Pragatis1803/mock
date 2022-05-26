@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-
 </head>
 <body>
     <div id="Main">
@@ -14,14 +13,18 @@
             <!-- <img src="./assests/umbrella-svgrepo-com.svg" class="umbrella"> -->
             <img src="./assests/logo.png"class="logo">
             <h1 class="logoTitle">WeatherLine</h1>
-            <form action="index.html" method="post" class="form">
-                <input type="text" class="cityName" placeholder="Search City Name">
-                <input type="text" class="countryCode" placeholder="Search Country Code">
-                <button type="submit" class="submitBtn">Search</button><br>
+            <div class="form">
+                <input id="city" type="text" class="cityName search-bar" placeholder="Search City Name">
+                <input id="country" type="text" class="countryCode search-bar" placeholder="Search Country Code">
+                <button id="search" class="submitBtn">Search</button><br>
                 <!-- <button class="submitBtn" >Change Backgound</button> -->
-            </form>
+            </div>
             <p class="placeTemp weatherTag">Weather in <span id="Place">Banglore</span></p>
             <p class="placeTemp weatherValue"><span id="Temp">22</span>&#8451;</p>
+            <div class="placeTemp order">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                <div class="description">Cloudy</div>
+              </div>
             <div style="color: white;">
                 <label for="Humidity humudityTag">Humidity : <span id="Humidity">35%</span></label> <br>
                 <!-- <p id="Humidity" class="humidityValue" style="display: inline-block;">35%</p><br> -->
@@ -31,7 +34,7 @@
         </div>
      
     </div>
-   
+   <script src="index.js"></script>
    
 </body>
 </html>
